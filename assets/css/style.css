@@ -1,16 +1,13 @@
 /* =================================================
    Hull BSAC – Site Overrides
    Purpose:
-   - Provide minimal, safe overrides to legacy
-     Weebly-generated CSS
-   - Improve consistency and fix export-related issues
-   - Avoid changing layout or theme behaviour
+   - Minimal, safe overrides to legacy Weebly CSS
+   - Enforce consistent layout and typography
+   - Avoid page-specific hacks
 ================================================= */
-
 
 /* -------------------------------------------------
    Base document defaults
-   These are intentionally light-touch and generic.
 -------------------------------------------------- */
 body {
   font-family: Arial, sans-serif;
@@ -18,11 +15,8 @@ body {
   padding: 0;
 }
 
-
 /* -------------------------------------------------
    Navigation helpers (non-Weebly pages only)
-   Note:
-   Weebly menu styling still comes from their CSS.
 -------------------------------------------------- */
 nav ul {
   list-style: none;
@@ -36,27 +30,17 @@ nav a {
   text-decoration: none;
 }
 
-
 /* -------------------------------------------------
    Image safety
-   Prevent images from breaking layout on resize.
 -------------------------------------------------- */
 img {
   max-width: 100%;
   height: auto;
 }
 
-
 /* -------------------------------------------------
    Banner / Logo heading normalization
-   Problem:
-   Weebly applies page-specific heading sizes
-   (e.g. .wsite-page-about h1) which cause the
-   banner text to render much larger on some pages.
-
-   Solution:
-   Explicitly prevent custom CSS from altering
-   the logo/banner typography.
+   (Prevents page-specific Weebly scaling)
 -------------------------------------------------- */
 #logo h1,
 #logo h1 span {
@@ -64,102 +48,25 @@ img {
   line-height: inherit;
 }
 
-
-/* -------------------------------------------------
-   About page banner correction
-   Problem:
-   The About page inherits an aggressive Weebly
-   h1 rule that inflates the banner text only on
-   that page.
-
-   Solution:
-   Scope the correction ONLY to the About page
-   and ONLY to the banner heading.
--------------------------------------------------- */
-.wsite-page-about #logo h1,
-.wsite-page-about #logo h1 span {
-  font-size: inherit !important;
-  line-height: inherit !important;
-}
-
-
 /* -------------------------------------------------
    Fix ghosted highlight buttons (Weebly export issue)
-   Problem:
-   Exported Weebly sites are missing editor-only
-   CSS that restores opacity on highlight buttons.
-
-   Symptom:
-   Buttons appear semi-transparent ("ghosted").
-
-   Solution:
-   Match Weebly's selector depth and force
-   full opacity without affecting other buttons.
 -------------------------------------------------- */
 .wsite-content .wsite-button-highlight {
-  opacity: 1 !important;
-  text-shadow: none !important;
+  opacity: 1;
+  text-shadow: none;
 }
 
 /* -------------------------------------------------
-   Normalize Weebly header text on About page
+   FIX: Remove Weebly paragraph truncation (ELLIPSIS)
+   Root cause:
+   Weebly applies -webkit-line-clamp to
+   .wsite-content-text spans inside .paragraph blocks
 -------------------------------------------------- */
-.wsite-page-about .wsite-header-title,
-.wsite-page-about .wsite-header-title * {
-  font-size: inherit !important;
-  line-height: inherit !important;
+.wsite-content .paragraph .wsite-content-text {
+  display: block;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+  -webkit-line-clamp: unset;
+  -webkit-box-orient: unset;
 }
-
-/* -------------------------------------------------
-   Ensure highlight buttons are fully opaque
-   even when parent containers apply opacity
--------------------------------------------------- */
-.wsite-button-highlight,
-.wsite-button-highlight * {
-  opacity: 1 !important;
-}
-
-/* =================================================
-   Disable Weebly auto page headers on inner pages
-   ================================================= */
-
-/* Prevent oversized auto headers */
-.wsite-page-about .wsite-header-section,
-.wsite-page-about .wsite-content-title {
-  display: none !important;
-}
-
-/* Ensure buttons never inherit header opacity */
-.wsite-page-about .wsite-button-highlight {
-  opacity: 1 !important;
-  text-shadow: none !important;
-}
-
-/* =================================================
-   Fix paragraph truncation (remove ellipsis)
-   Ensures long paragraphs wrap normally
-================================================= */
-.wsite-content .paragraph,
-.wsite-content .paragraph p {
-  white-space: normal !important;
-  overflow: visible !important;
-  text-overflow: unset !important;
-}
-
-/* =================================================
-   Disable Weebly paragraph line-clamping
-   (Fixes text truncation with ellipsis)
-================================================= */
-
-.wsite-content .paragraph {
-  display: block !important;
-  -webkit-line-clamp: unset !important;
-  -webkit-box-orient: unset !important;
-  overflow: visible !important;
-}
-
-.wsite-content .paragraph * {
-  display: inline !important;
-  white-space: normal !important;
-}
-
