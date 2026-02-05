@@ -135,3 +135,14 @@ img {
   text-shadow: none !important;
 }
 
+/* =================================================
+   Fix paragraph truncation (remove ellipsis)
+   Ensures long paragraphs wrap normally
+================================================= */
+.wsite-content .paragraph,
+.wsite-content .paragraph p {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: unset !important;
+}
+
