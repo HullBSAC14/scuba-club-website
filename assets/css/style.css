@@ -100,3 +100,21 @@ img {
   opacity: 1 !important;
   text-shadow: none !important;
 }
+
+/* -------------------------------------------------
+   Normalize Weebly header text on About page
+-------------------------------------------------- */
+.wsite-page-about .wsite-header-title,
+.wsite-page-about .wsite-header-title * {
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+
+/* -------------------------------------------------
+   Ensure highlight buttons are fully opaque
+   even when parent containers apply opacity
+-------------------------------------------------- */
+.wsite-button-highlight,
+.wsite-button-highlight * {
+  opacity: 1 !important;
+}
