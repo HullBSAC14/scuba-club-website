@@ -1,9 +1,29 @@
+/* =================================================
+   Hull BSAC – Site Overrides
+   Purpose:
+   - Provide minimal, safe overrides to legacy
+     Weebly-generated CSS
+   - Improve consistency and fix export-related issues
+   - Avoid changing layout or theme behaviour
+================================================= */
+
+
+/* -------------------------------------------------
+   Base document defaults
+   These are intentionally light-touch and generic.
+-------------------------------------------------- */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
+
+/* -------------------------------------------------
+   Navigation helpers (non-Weebly pages only)
+   Note:
+   Weebly menu styling still comes from their CSS.
+-------------------------------------------------- */
 nav ul {
   list-style: none;
   padding: 0;
@@ -16,20 +36,67 @@ nav a {
   text-decoration: none;
 }
 
+
+/* -------------------------------------------------
+   Image safety
+   Prevent images from breaking layout on resize.
+-------------------------------------------------- */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* Prevent custom CSS from breaking Weebly header */
+
+/* -------------------------------------------------
+   Banner / Logo heading normalization
+   Problem:
+   Weebly applies page-specific heading sizes
+   (e.g. .wsite-page-about h1) which cause the
+   banner text to render much larger on some pages.
+
+   Solution:
+   Explicitly prevent custom CSS from altering
+   the logo/banner typography.
+-------------------------------------------------- */
 #logo h1,
 #logo h1 span {
   font-size: inherit;
   line-height: inherit;
 }
 
-/* Fix ghosted Weebly highlight buttons */
-.wsite-button.wsite-button-highlight {
+
+/* -------------------------------------------------
+   About page banner correction
+   Problem:
+   The About page inherits an aggressive Weebly
+   h1 rule that inflates the banner text only on
+   that page.
+
+   Solution:
+   Scope the correction ONLY to the About page
+   and ONLY to the banner heading.
+-------------------------------------------------- */
+.wsite-page-about #logo h1,
+.wsite-page-about #logo h1 span {
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+
+
+/* -------------------------------------------------
+   Fix ghosted highlight buttons (Weebly export issue)
+   Problem:
+   Exported Weebly sites are missing editor-only
+   CSS that restores opacity on highlight buttons.
+
+   Symptom:
+   Buttons appear semi-transparent ("ghosted").
+
+   Solution:
+   Match Weebly's selector depth and force
+   full opacity without affecting other buttons.
+-------------------------------------------------- */
+.wsite-content .wsite-button-highlight {
   opacity: 1 !important;
   text-shadow: none !important;
 }
