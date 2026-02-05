@@ -146,3 +146,20 @@ img {
   text-overflow: unset !important;
 }
 
+/* =================================================
+   Disable Weebly paragraph line-clamping
+   (Fixes text truncation with ellipsis)
+================================================= */
+
+.wsite-content .paragraph {
+  display: block !important;
+  -webkit-line-clamp: unset !important;
+  -webkit-box-orient: unset !important;
+  overflow: visible !important;
+}
+
+.wsite-content .paragraph * {
+  display: inline !important;
+  white-space: normal !important;
+}
+
