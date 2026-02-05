@@ -118,3 +118,20 @@ img {
 .wsite-button-highlight * {
   opacity: 1 !important;
 }
+
+/* =================================================
+   Disable Weebly auto page headers on inner pages
+   ================================================= */
+
+/* Prevent oversized auto headers */
+.wsite-page-about .wsite-header-section,
+.wsite-page-about .wsite-content-title {
+  display: none !important;
+}
+
+/* Ensure buttons never inherit header opacity */
+.wsite-page-about .wsite-button-highlight {
+  opacity: 1 !important;
+  text-shadow: none !important;
+}
+
