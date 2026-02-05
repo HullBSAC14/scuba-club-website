@@ -3,3 +3,12 @@ body { font-family: Arial, sans-serif; margin:0; padding:0; }
 nav ul { list-style:none; padding:0; margin:0; display:flex; gap:1rem; }
 nav a { text-decoration:none; }
 img { max-width:100%; height:auto; }
+
+/* -------------------------------------------------
+   Fix ghosted Weebly highlight buttons
+   Required for exported / non-Weebly hosting
+-------------------------------------------------- */
+.wsite-button-highlight {
+  opacity: 1 !important;
+  text-shadow: none !important;
+}
