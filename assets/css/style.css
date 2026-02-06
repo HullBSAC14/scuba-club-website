@@ -1,10 +1,13 @@
 /* =================================================
    Hull BSAC – Site Overrides
+   -------------------------------------------------
    Purpose:
    - Minimal, safe overrides to legacy Weebly CSS
-   - Enforce consistent layout and typography
+   - Enforce consistent layout and behaviour
+   - Fix known Weebly export defects
    - Avoid page-specific hacks
 ================================================= */
+
 
 /* -------------------------------------------------
    Base document defaults
@@ -15,32 +18,21 @@ body {
   padding: 0;
 }
 
-/* -------------------------------------------------
-   Navigation helpers (non-Weebly pages only)
--------------------------------------------------- */
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: 1rem;
-}
-
-nav a {
-  text-decoration: none;
-}
 
 /* -------------------------------------------------
    Image safety
+   Prevent images from breaking layout on resize
 -------------------------------------------------- */
 img {
   max-width: 100%;
   height: auto;
 }
 
+
 /* -------------------------------------------------
-   Banner / Logo heading normalization
-   (Prevents page-specific Weebly scaling)
+   Logo / banner normalization
+   Defensive rule retained for safety in case
+   Weebly-generated heading markup appears
 -------------------------------------------------- */
 #logo h1,
 #logo h1 span {
@@ -48,19 +40,35 @@ img {
   line-height: inherit;
 }
 
-/* -------------------------------------------------
-   Fix ghosted highlight buttons (Weebly export issue)
--------------------------------------------------- */
-.wsite-content .wsite-button-highlight {
-  opacity: 1;
-  text-shadow: none;
-}
 
 /* -------------------------------------------------
-   FIX: Remove Weebly paragraph truncation (ELLIPSIS)
-   Root cause:
-   Weebly applies -webkit-line-clamp to
-   .wsite-content-text spans inside .paragraph blocks
+   FIX: Ghosted Weebly highlight buttons
+   -------------------------------------------------
+   Problem:
+   Exported Weebly sites miss editor-only CSS,
+   causing highlight buttons to appear faded.
+
+   Solution:
+   Force full opacity and normal text rendering
+   globally, including page-scoped overrides.
+-------------------------------------------------- */
+.wsite-button-highlight,
+.wsite-page-about .wsite-button-highlight {
+  opacity: 1 !important;
+  text-shadow: none !important;
+  filter: none !important;
+}
+
+
+/* -------------------------------------------------
+   FIX: Weebly paragraph truncation (ellipsis bug)
+   -------------------------------------------------
+   Problem:
+   Weebly applies -webkit-line-clamp to paragraph
+   spans, truncating long historical text.
+
+   Solution:
+   Explicitly disable truncation behaviour.
 -------------------------------------------------- */
 .wsite-content .paragraph .wsite-content-text {
   display: block;
@@ -71,16 +79,13 @@ img {
   -webkit-box-orient: unset;
 }
 
-/* =====================================================
-   CLEAN GALLERY SYSTEM
-   ===================================================== */
+
+/* =================================================
+   GALLERY SYSTEM (CLEAN & MAINTAINABLE)
+   ================================================= */
 
 .gallery-section {
   margin: 3rem 0;
-}
-
-.gallery-title {
-  margin-bottom: 1.5rem;
 }
 
 .gallery-grid {
@@ -101,4 +106,3 @@ img {
   object-fit: cover;
   display: block;
 }
-
