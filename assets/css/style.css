@@ -108,7 +108,7 @@ img {
 }
 
 /* =================================================
-   FINAL FIX: Weebly Highlight Buttons (Ghosting)
+   Weebly Highlight Button
    -------------------------------------------------
    Problem:
    Exported Weebly sites miss editor-only CSS,
@@ -131,5 +131,21 @@ img {
   background-image: none !important;
   appearance: auto !important;
   -webkit-appearance: auto !important;
+}
+
+/* =================================================
+   Weebly Button Ghosting
+   -------------------------------------------------
+   Root cause:
+   Weebly applies opacity to .wsite-button-inner,
+   which survives static export and causes faded
+   buttons.
+
+   Fix:
+   Force inner wrapper to full opacity.
+================================================= */
+
+.wsite-button-inner {
+  opacity: 1 !important;
 }
 
