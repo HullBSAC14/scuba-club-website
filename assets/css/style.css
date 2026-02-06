@@ -106,3 +106,30 @@ img {
   object-fit: cover;
   display: block;
 }
+
+/* =================================================
+   FINAL FIX: Weebly Highlight Buttons (Ghosting)
+   -------------------------------------------------
+   Problem:
+   Exported Weebly sites miss editor-only CSS,
+   causing highlight buttons to appear faded.
+
+   Affected buttons:
+   - "How it all Began" (About page)
+   - "Send message" (Contact page)
+
+   Solution:
+   Force full opacity and reset legacy effects
+   across all pages.
+================================================= */
+
+.wsite-button,
+.wsite-button-highlight {
+  opacity: 1 !important;
+  filter: none !important;
+  text-shadow: none !important;
+  background-image: none !important;
+  appearance: auto !important;
+  -webkit-appearance: auto !important;
+}
+
