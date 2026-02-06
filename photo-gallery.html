@@ -115,88 +115,230 @@
 
  
 
-<!-- =====================================================
-     GALLERY SECTION: EYEMOUTH
-     ===================================================== -->
+<!-- =========================================================
+     PHOTO GALLERY
+     Clean, maintainable gallery layout
+     ---------------------------------------------------------
+     HOW TO ADD PHOTOS:
+     - Duplicate an <a class="gallery-item"> block
+     - Update:
+         href  → full-size image
+         img   → thumbnail image
+         alt   → meaningful description
+     ---------------------------------------------------------
+     HOW TO ADD A NEW GALLERY SECTION:
+     - Copy an entire <section class="gallery-section">
+     - Change the <h2> title
+     - Add images inside the .gallery-grid
+========================================================== -->
+
 <section class="gallery-section">
-  <h2 class="gallery-title">Eyemouth</h2>
+  <h1 class="wsite-content-title">Photo Gallery</h1>
 
+  <!-- =======================
+       EYEMOUTH
+  ======================== -->
+  <h2>Eyemouth</h2>
   <div class="gallery-grid">
-    <!-- Gallery item -->
-    <a
-      href="/assets/images/gallery/crab_1_orig.jpg"
-      class="gallery-item"
-      data-lightbox="eyemouth"
-      data-title="Eyemouth diving trip"
-    >
-      <img
-        src="/assets/images/gallery/crab_1.jpg"
-        alt="Eyemouth diving trip"
-        loading="lazy"
-      >
+
+    <a href="/assets/images/gallery/eyemouth/eyemouth_1_orig.jpg" class="gallery-item" rel="lightbox[eyemouth]">
+      <img src="/assets/images/gallery/eyemouth/eyemouth_1.jpg" alt="Eyemouth diving trip">
     </a>
 
-    <a
-      href="/assets/images/gallery/crab2_1_orig.jpg"
-      class="gallery-item"
-      data-lightbox="eyemouth"
-      data-title="Eyemouth dive site"
-    >
-      <img
-        src="/assets/images/gallery/crab2_1.jpg"
-        alt="Eyemouth dive site"
-        loading="lazy"
-      >
+    <a href="/assets/images/gallery/eyemouth/eyemouth_2_orig.jpg" class="gallery-item" rel="lightbox[eyemouth]">
+      <img src="/assets/images/gallery/eyemouth/eyemouth_2.jpg" alt="Eyemouth dive site">
     </a>
 
-    <a
-      href="/assets/images/gallery/dennis_1_orig.jpg"
-      class="gallery-item"
-      data-lightbox="eyemouth"
-      data-title="BSAC Hull divers at Eyemouth"
-    >
-      <img
-        src="/assets/images/gallery/dennis_1.jpg"
-        alt="BSAC Hull divers at Eyemouth"
-        loading="lazy"
-      >
+    <a href="/assets/images/gallery/eyemouth/eyemouth_3_orig.jpg" class="gallery-item" rel="lightbox[eyemouth]">
+      <img src="/assets/images/gallery/eyemouth/eyemouth_3.jpg" alt="BSAC Hull divers at Eyemouth">
     </a>
 
-    <!-- Add more <a class="gallery-item"> blocks as needed -->
+    <a href="/assets/images/gallery/eyemouth/eyemouth_4_orig.jpg" class="gallery-item" rel="lightbox[eyemouth]">
+      <img src="/assets/images/gallery/eyemouth/eyemouth_4.jpg" alt="Eyemouth harbour">
+    </a>
+
+    <a href="/assets/images/gallery/eyemouth/eyemouth_5_orig.jpg" class="gallery-item" rel="lightbox[eyemouth]">
+      <img src="/assets/images/gallery/eyemouth/eyemouth_5.jpg" alt="Preparing for a dive at Eyemouth">
+    </a>
+
+    <a href="/assets/images/gallery/eyemouth/eyemouth_6_orig.jpg" class="gallery-item" rel="lightbox[eyemouth]">
+      <img src="/assets/images/gallery/eyemouth/eyemouth_6.jpg" alt="Eyemouth underwater scene">
+    </a>
+
+    <a href="/assets/images/gallery/eyemouth/eyemouth_7_orig.jpg" class="gallery-item" rel="lightbox[eyemouth]">
+      <img src="/assets/images/gallery/eyemouth/eyemouth_7.jpg" alt="Diving conditions at Eyemouth">
+    </a>
+
+    <a href="/assets/images/gallery/eyemouth/eyemouth_8_orig.jpg" class="gallery-item" rel="lightbox[eyemouth]">
+      <img src="/assets/images/gallery/eyemouth/eyemouth_8.jpg" alt="Eyemouth coastline">
+    </a>
+
+    <a href="/assets/images/gallery/eyemouth/eyemouth_9_orig.jpg" class="gallery-item" rel="lightbox[eyemouth]">
+      <img src="/assets/images/gallery/eyemouth/eyemouth_9.jpg" alt="Surface interval at Eyemouth">
+    </a>
+
+    <a href="/assets/images/gallery/eyemouth/eyemouth_10_orig.jpg" class="gallery-item" rel="lightbox[eyemouth]">
+      <img src="/assets/images/gallery/eyemouth/eyemouth_10.jpg" alt="Group dive at Eyemouth">
+    </a>
+
+    <a href="/assets/images/gallery/eyemouth/eyemouth_11_orig.jpg" class="gallery-item" rel="lightbox[eyemouth]">
+      <img src="/assets/images/gallery/eyemouth/eyemouth_11.jpg" alt="Eyemouth dive boat">
+    </a>
+
+    <a href="/assets/images/gallery/eyemouth/eyemouth_12_orig.jpg" class="gallery-item" rel="lightbox[eyemouth]">
+      <img src="/assets/images/gallery/eyemouth/eyemouth_12.jpg" alt="Eyemouth shore diving">
+    </a>
+
+    <a href="/assets/images/gallery/eyemouth/eyemouth_13_orig.jpg" class="gallery-item" rel="lightbox[eyemouth]">
+      <img src="/assets/images/gallery/eyemouth/eyemouth_13.jpg" alt="Eyemouth marine life">
+    </a>
+
+    <a href="/assets/images/gallery/eyemouth/eyemouth_14_orig.jpg" class="gallery-item" rel="lightbox[eyemouth]">
+      <img src="/assets/images/gallery/eyemouth/eyemouth_14.jpg" alt="Final dive at Eyemouth">
+    </a>
+
   </div>
+
+  <!-- =======================
+       RED SEA
+  ======================== -->
+  <h2>Red Sea</h2>
+  <div class="gallery-grid">
+
+    <a href="/assets/images/gallery/red-sea/redsea_1_orig.jpg" class="gallery-item" rel="lightbox[redsea]">
+      <img src="/assets/images/gallery/red-sea/redsea_1.jpg" alt="Red Sea reef">
+    </a>
+
+    <a href="/assets/images/gallery/red-sea/redsea_2_orig.jpg" class="gallery-item" rel="lightbox[redsea]">
+      <img src="/assets/images/gallery/red-sea/redsea_2.jpg" alt="Red Sea shark encounter">
+    </a>
+
+    <a href="/assets/images/gallery/red-sea/redsea_3_orig.jpg" class="gallery-item" rel="lightbox[redsea]">
+      <img src="/assets/images/gallery/red-sea/redsea_3.jpg" alt="Red Sea coral">
+    </a>
+
+    <a href="/assets/images/gallery/red-sea/redsea_4_orig.jpg" class="gallery-item" rel="lightbox[redsea]">
+      <img src="/assets/images/gallery/red-sea/redsea_4.jpg" alt="Red Sea wreck dive">
+    </a>
+
+    <a href="/assets/images/gallery/red-sea/redsea_5_orig.jpg" class="gallery-item" rel="lightbox[redsea]">
+      <img src="/assets/images/gallery/red-sea/redsea_5.jpg" alt="Red Sea marine life">
+    </a>
+
+    <a href="/assets/images/gallery/red-sea/redsea_6_orig.jpg" class="gallery-item" rel="lightbox[redsea]">
+      <img src="/assets/images/gallery/red-sea/redsea_6.jpg" alt="Red Sea dive group">
+    </a>
+
+    <a href="/assets/images/gallery/red-sea/redsea_7_orig.jpg" class="gallery-item" rel="lightbox[redsea]">
+      <img src="/assets/images/gallery/red-sea/redsea_7.jpg" alt="Red Sea underwater landscape">
+    </a>
+
+    <a href="/assets/images/gallery/red-sea/redsea_8_orig.jpg" class="gallery-item" rel="lightbox[redsea]">
+      <img src="/assets/images/gallery/red-sea/redsea_8.jpg" alt="Red Sea fish life">
+    </a>
+
+    <a href="/assets/images/gallery/red-sea/redsea_9_orig.jpg" class="gallery-item" rel="lightbox[redsea]">
+      <img src="/assets/images/gallery/red-sea/redsea_9.jpg" alt="Red Sea dive site overview">
+    </a>
+
+    <a href="/assets/images/gallery/red-sea/redsea_10_orig.jpg" class="gallery-item" rel="lightbox[redsea]">
+      <img src="/assets/images/gallery/red-sea/redsea_10.jpg" alt="Red Sea dive boat">
+    </a>
+
+    <a href="/assets/images/gallery/red-sea/redsea_11_orig.jpg" class="gallery-item" rel="lightbox[redsea]">
+      <img src="/assets/images/gallery/red-sea/redsea_11.jpg" alt="Final Red Sea dive">
+    </a>
+
+  </div>
+
+<!-- =======================
+     SCAPA FLOW
+======================== -->
+<h2>Scapa Flow</h2>
+<div class="gallery-grid">
+
+  <a href="/assets/images/gallery/scapa/scapa_1_orig.jpg" class="gallery-item" rel="lightbox[scapa]">
+    <img src="/assets/images/gallery/scapa/scapa_1.jpg" alt="Scapa Flow wreck diving">
+  </a>
+
+  <a href="/assets/images/gallery/scapa/scapa_2_orig.jpg" class="gallery-item" rel="lightbox[scapa]">
+    <img src="/assets/images/gallery/scapa/scapa_2.jpg" alt="German fleet wreck at Scapa Flow">
+  </a>
+
+  <a href="/assets/images/gallery/scapa/scapa_3_orig.jpg" class="gallery-item" rel="lightbox[scapa]">
+    <img src="/assets/images/gallery/scapa/scapa_3.jpg" alt="Scapa Flow dive boat">
+  </a>
+
+  <a href="/assets/images/gallery/scapa/scapa_4_orig.jpg" class="gallery-item" rel="lightbox[scapa]">
+    <img src="/assets/images/gallery/scapa/scapa_4.jpg" alt="Battleship wreck at Scapa Flow">
+  </a>
+
+  <a href="/assets/images/gallery/scapa/scapa_5_orig.jpg" class="gallery-item" rel="lightbox[scapa]">
+    <img src="/assets/images/gallery/scapa/scapa_5.jpg" alt="Divers preparing for Scapa Flow dive">
+  </a>
+
+  <a href="/assets/images/gallery/scapa/scapa_6_orig.jpg" class="gallery-item" rel="lightbox[scapa]">
+    <img src="/assets/images/gallery/scapa/scapa_6.jpg" alt="Scapa Flow underwater scene">
+  </a>
+
+  <a href="/assets/images/gallery/scapa/scapa_7_orig.jpg" class="gallery-item" rel="lightbox[scapa]">
+    <img src="/assets/images/gallery/scapa/scapa_7.jpg" alt="Scapa Flow wreck details">
+  </a>
+
+  <a href="/assets/images/gallery/scapa/scapa_8_orig.jpg" class="gallery-item" rel="lightbox[scapa]">
+    <img src="/assets/images/gallery/scapa/scapa_8.jpg" alt="Historic wreck at Scapa Flow">
+  </a>
+
+  <a href="/assets/images/gallery/scapa/scapa_9_orig.jpg" class="gallery-item" rel="lightbox[scapa]">
+    <img src="/assets/images/gallery/scapa/scapa_9.jpg" alt="Final Scapa Flow dive">
+  </a>
+
+</div>
+
+
+<!-- =======================
+     OBAN & SOUND OF MULL
+======================== -->
+<h2>Oban &amp; the Sound of Mull</h2>
+<div class="gallery-grid">
+
+  <a href="/assets/images/gallery/oban/oban_1_orig.jpg" class="gallery-item" rel="lightbox[oban]">
+    <img src="/assets/images/gallery/oban/oban_1.jpg" alt="Oban coastal diving">
+  </a>
+
+  <a href="/assets/images/gallery/oban/oban_2_orig.jpg" class="gallery-item" rel="lightbox[oban]">
+    <img src="/assets/images/gallery/oban/oban_2.jpg" alt="Sound of Mull wreck dive">
+  </a>
+
+  <a href="/assets/images/gallery/oban/oban_3_orig.jpg" class="gallery-item" rel="lightbox[oban]">
+    <img src="/assets/images/gallery/oban/oban_3.jpg" alt="Divers at Oban">
+  </a>
+
+  <a href="/assets/images/gallery/oban/oban_4_orig.jpg" class="gallery-item" rel="lightbox[oban]">
+    <img src="/assets/images/gallery/oban/oban_4.jpg" alt="Sound of Mull underwater life">
+  </a>
+
+  <a href="/assets/images/gallery/oban/oban_5_orig.jpg" class="gallery-item" rel="lightbox[oban]">
+    <img src="/assets/images/gallery/oban/oban_5.jpg" alt="Oban dive boat">
+  </a>
+
+  <a href="/assets/images/gallery/oban/oban_6_orig.jpg" class="gallery-item" rel="lightbox[oban]">
+    <img src="/assets/images/gallery/oban/oban_6.jpg" alt="Final dive at Oban">
+  </a>
+
+</div>
+
+
+  <!-- =======================
+       FUTURE VIDEO SECTION
+       (YouTube embeds later)
+  ======================== -->
+  <h2>Video Gallery</h2>
+  <p>
+    Club dive videos and member footage will be added here in the future.
+  </p>
+
 </section>
-
-
-				<div style="height: 20px; overflow: hidden;"></div></div>
-
-<h2 class="wsite-content-title" style="text-align:left;">Red Sea   </h2>
-
-<div><div style="height: 20px; overflow: hidden;"></div>
-				<div id='gallery' class='imageGallery' style='line-height: 0px; padding: 0; margin: 0'>
-<div id='imageContainer0' style='float:left;width:33.28%;margin:0;'><div id='insideImageContainer0' style='position:relative;margin:5px;'><div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='/assets/images/gallery/red_sea_1_orig.jpg' rel='lightbox[gallery]'><img src='/assets/images/gallery/red_sea_1.jpg' class='galleryImage' _width='400' _height='250' style='position:absolute;border:0;width:120%;top:0%;left:-10%' /></a></div></div></div></div><div id='imageContainer1' style='float:left;width:33.28%;margin:0;'><div id='insideImageContainer1' style='position:relative;margin:5px;'><div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='/assets/images/gallery/red_sea_2_orig.jpg' rel='lightbox[gallery]'><img src='/assets/images/gallery/red_sea_2.jpg' class='galleryImage' _width='400' _height='160' style='position:absolute;border:0;width:187.5%;top:0%;left:-43.75%' /></a></div></div></div></div><div id='imageContainer2' style='float:left;width:33.28%;margin:0;'><div id='insideImageContainer2' style='position:relative;margin:5px;'><div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='/assets/images/gallery/red_sea_3_orig.jpg' rel='lightbox[gallery]'><img src='/assets/images/gallery/red_sea_3.jpg' class='galleryImage' _width='400' _height='236' style='position:absolute;border:0;width:127.12%;top:0%;left:-13.56%' /></a></div></div></div></div><div id='imageContainer3' style='float:left;width:33.28%;margin:0;'><div id='insideImageContainer3' style='position:relative;margin:5px;'><div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='/assets/images/gallery/red_sea_4_orig.jpg' rel='lightbox[gallery]'><img src='/assets/images/gallery/red_sea_4.jpg' class='galleryImage' _width='400' _height='217' style='position:absolute;border:0;width:138.25%;top:0%;left:-19.12%' /></a></div></div></div></div><div id='imageContainer4' style='float:left;width:33.28%;margin:0;'><div id='insideImageContainer4' style='position:relative;margin:5px;'><div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='/assets/images/gallery/red_sea_5_orig.jpg' rel='lightbox[gallery]'><img src='/assets/images/gallery/red_sea_5.jpg' class='galleryImage' _width='400' _height='193' style='position:absolute;border:0;width:155.44%;top:0%;left:-27.72%' /></a></div></div></div></div><div id='imageContainer5' style='float:left;width:33.28%;margin:0;'><div id='insideImageContainer5' style='position:relative;margin:5px;'><div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='/assets/images/gallery/red_sea_6_orig.jpg' rel='lightbox[gallery]'><img src='/assets/images/gallery/red_sea_6.jpg' class='galleryImage' _width='400' _height='265' style='position:absolute;border:0;width:113.21%;top:0%;left:-6.6%' /></a></div></div></div></div><div id='imageContainer6' style='float:left;width:33.28%;margin:0;'><div id='insideImageContainer6' style='position:relative;margin:5px;'><div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='/assets/images/gallery/red_sea_7_orig.jpg' rel='lightbox[gallery]'><img src='/assets/images/gallery/red_sea_7.jpg' class='galleryImage' _width='400' _height='265' style='position:absolute;border:0;width:113.21%;top:0%;left:-6.6%' /></a></div></div></div></div><div id='imageContainer7' style='float:left;width:33.28%;margin:0;'><div id='insideImageContainer7' style='position:relative;margin:5px;'><div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='/assets/images/gallery/red_sea_8_orig.jpg' rel='lightbox[gallery]'><img src='/assets/images/gallery/red_sea_8.jpg' class='galleryImage' _width='400' _height='265' style='position:absolute;border:0;width:113.21%;top:0%;left:-6.6%' /></a></div></div></div></div><div id='imageContainer8' style='float:left;width:33.28%;margin:0;'><div id='insideImageContainer8' style='position:relative;margin:5px;'><div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='/assets/images/gallery/red_sea_9_orig.jpg' rel='lightbox[gallery]'><img src='/assets/images/gallery/red_sea_9.jpg' class='galleryImage' _width='400' _height='265' style='position:absolute;border:0;width:113.21%;top:0%;left:-6.6%' /></a></div></div></div></div><div id='imageContainer9' style='float:left;width:33.28%;margin:0;'><div id='insideImageContainer9' style='position:relative;margin:5px;'><div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='/assets/images/gallery/red_sea_10_orig.jpg' rel='lightbox[gallery]'><img src='/assets/images/gallery/red_sea_10.jpg' class='galleryImage' _width='400' _height='314' style='position:absolute;border:0;width:100%;top:-2.33%;left:0%' /></a></div></div></div></div><div id='imageContainer10' style='float:left;width:33.28%;margin:0;'><div id='insideImageContainer10' style='position:relative;margin:5px;'><div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='/assets/images/gallery/red_sea_11_orig.jpg' rel='lightbox[gallery]'><img src='/assets/images/gallery/red_sea_11.jpg' class='galleryImage' _width='400' _height='265' style='position:absolute;border:0;width:113.21%;top:0%;left:-6.6%' /></a></div></div></div></div><span style='display: block; clear: both; height: 0px; overflow: hidden;'></span>
-</div>
-
-				<div style="height: 20px; overflow: hidden;"></div></div>
-
-<h2 class="wsite-content-title" style="text-align:left;">Scapa Flow</h2>
-
-<div><div style="height: 20px; overflow: hidden;"></div>
-				<div id='gallery' class='imageGallery' style='line-height: 0px; padding: 0; margin: 0'>
-<div id='imageContainer0' style='float:left;width:33.28%;margin:0;'><div id='insideImageContainer0' style='position:relative;margin:5px;'><div class='galleryImageBorder' style='border-width:1px;padding:3px;'><div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='/assets/images/gallery/973396_1_orig.jpg' rel='lightbox[gallery]'><img src='/assets/images/gallery/973396_1.jpg' class='galleryImage' _width='333' _height='222' style='position:absolute;border:0;width:112.5%;top:0%;left:-6.25%' /></a></div></div></div></div></div><div id='imageContainer1' style='float:left;width:33.28%;margin:0;'><div id='insideImageContainer1' style='position:relative;margin:5px;'><div class='galleryImageBorder' style='border-width:1px;padding:3px;'><div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='/assets/images/gallery/7574086_1_orig.jpg' rel='lightbox[gallery]'><img src='/assets/images/gallery/7574086_1.jpg' class='galleryImage' _width='333' _height='222' style='position:absolute;border:0;width:112.5%;top:0%;left:-6.25%' /></a></div></div></div></div></div><div id='imageContainer2' style='float:left;width:33.28%;margin:0;'><div id='insideImageContainer2' style='position:relative;margin:5px;'><div class='galleryImageBorder' style='border-width:1px;padding:3px;'><div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='/assets/images/gallery/9225094_1_orig.jpg' rel='lightbox[gallery]'><img src='/assets/images/gallery/9225094_1.jpg' class='galleryImage' _width='333' _height='222' style='position:absolute;border:0;width:112.5%;top:0%;left:-6.25%' /></a></div></div></div></div></div><div id='imageContainer3' style='float:left;width:33.28%;margin:0;'><div id='insideImageContainer3' style='position:relative;margin:5px;'><div class='galleryImageBorder' style='border-width:1px;padding:3px;'><div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='/assets/images/gallery/4921426_1_orig.jpg' rel='lightbox[gallery]'><img src='/assets/images/gallery/4921426_1.jpg' class='galleryImage' _width='333' _height='222' style='position:absolute;border:0;width:112.5%;top:0%;left:-6.25%' /></a></div></div></div></div></div><div id='imageContainer4' style='float:left;width:33.28%;margin:0;'><div id='insideImageContainer4' style='position:relative;margin:5px;'><div class='galleryImageBorder' style='border-width:1px;padding:3px;'><div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='/assets/images/gallery/2954624_1_orig.jpg' rel='lightbox[gallery]'><img src='/assets/images/gallery/2954624_1.jpg' class='galleryImage' _width='333' _height='222' style='position:absolute;border:0;width:112.5%;top:0%;left:-6.25%' /></a></div></div></div></div></div><div id='imageContainer5' style='float:left;width:33.28%;margin:0;'><div id='insideImageContainer5' style='position:relative;margin:5px;'><div class='galleryImageBorder' style='border-width:1px;padding:3px;'><div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='/assets/images/gallery/6051489_1_orig.jpg' rel='lightbox[gallery]'><img src='/assets/images/gallery/6051489_1.jpg' class='galleryImage' _width='400' _height='300' style='position:absolute;border:0;width:100%;top:-0%;left:0%' /></a></div></div></div></div></div><div id='imageContainer6' style='float:left;width:33.28%;margin:0;'><div id='insideImageContainer6' style='position:relative;margin:5px;'><div class='galleryImageBorder' style='border-width:1px;padding:3px;'><div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='/assets/images/gallery/6233010_1_orig.jpg' rel='lightbox[gallery]'><img src='/assets/images/gallery/6233010_1.jpg' class='galleryImage' _width='400' _height='300' style='position:absolute;border:0;width:100%;top:-0%;left:0%' /></a></div></div></div></div></div><div id='imageContainer7' style='float:left;width:33.28%;margin:0;'><div id='insideImageContainer7' style='position:relative;margin:5px;'><div class='galleryImageBorder' style='border-width:1px;padding:3px;'><div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='/assets/images/gallery/6078269_1_orig.jpg' rel='lightbox[gallery]'><img src='/assets/images/gallery/6078269_1.jpg' class='galleryImage' _width='400' _height='300' style='position:absolute;border:0;width:100%;top:-0%;left:0%' /></a></div></div></div></div></div><div id='imageContainer8' style='float:left;width:33.28%;margin:0;'><div id='insideImageContainer8' style='position:relative;margin:5px;'><div class='galleryImageBorder' style='border-width:1px;padding:3px;'><div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='/assets/images/gallery/8257249_1_orig.jpg' rel='lightbox[gallery]'><img src='/assets/images/gallery/8257249_1.jpg' class='galleryImage' _width='400' _height='300' style='position:absolute;border:0;width:100%;top:-0%;left:0%' /></a></div></div></div></div></div><span style='display: block; clear: both; height: 0px; overflow: hidden;'></span>
-</div>
-
-				<div style="height: 20px; overflow: hidden;"></div></div>
-
-<h2 class="wsite-content-title" style="text-align:left;">Oban &amp; the Sound of Mull</h2>
-
-<div><div style="height: 20px; overflow: hidden;"></div>
-				<div id='gallery' class='imageGallery' style='line-height: 0px; padding: 0; margin: 0'>
-<div id='imageContainer0' style='float:left;width:33.28%;margin:0;'><div id='insideImageContainer0' style='position:relative;margin:5px;'><div class='galleryImageBorder' style='border-width:1px;padding:3px;'><div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='/assets/images/gallery/696767_1_orig.jpg' rel='lightbox[gallery]'><img src='/assets/images/gallery/696767_1.jpg' class='galleryImage' _width='400' _height='266' style='position:absolute;border:0;width:112.78%;top:0%;left:-6.39%' /></a></div></div></div></div></div><div id='imageContainer1' style='float:left;width:33.28%;margin:0;'><div id='insideImageContainer1' style='position:relative;margin:5px;'><div class='galleryImageBorder' style='border-width:1px;padding:3px;'><div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='/assets/images/gallery/1373338_1_orig.jpg' rel='lightbox[gallery]'><img src='/assets/images/gallery/1373338_1.jpg' class='galleryImage' _width='400' _height='266' style='position:absolute;border:0;width:112.78%;top:0%;left:-6.39%' /></a></div></div></div></div></div><div id='imageContainer2' style='float:left;width:33.28%;margin:0;'><div id='insideImageContainer2' style='position:relative;margin:5px;'><div class='galleryImageBorder' style='border-width:1px;padding:3px;'><div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='/assets/images/gallery/4341290_1_orig.jpg' rel='lightbox[gallery]'><img src='/assets/images/gallery/4341290_1.jpg' class='galleryImage' _width='400' _height='297' style='position:absolute;border:0;width:101.01%;top:0%;left:-0.51%' /></a></div></div></div></div></div><div id='imageContainer3' style='float:left;width:33.28%;margin:0;'><div id='insideImageContainer3' style='position:relative;margin:5px;'><div class='galleryImageBorder' style='border-width:1px;padding:3px;'><div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='/assets/images/gallery/480771_1_orig.jpg' rel='lightbox[gallery]'><img src='/assets/images/gallery/480771_1.jpg' class='galleryImage' _width='400' _height='297' style='position:absolute;border:0;width:101.01%;top:0%;left:-0.51%' /></a></div></div></div></div></div><div id='imageContainer4' style='float:left;width:33.28%;margin:0;'><div id='insideImageContainer4' style='position:relative;margin:5px;'><div class='galleryImageBorder' style='border-width:1px;padding:3px;'><div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='/assets/images/gallery/4162077_1_orig.jpg' rel='lightbox[gallery]'><img src='/assets/images/gallery/4162077_1.jpg' class='galleryImage' _width='400' _height='297' style='position:absolute;border:0;width:101.01%;top:0%;left:-0.51%' /></a></div></div></div></div></div><div id='imageContainer5' style='float:left;width:33.28%;margin:0;'><div id='insideImageContainer5' style='position:relative;margin:5px;'><div class='galleryImageBorder' style='border-width:1px;padding:3px;'><div class='galleryImageHolder' style='position:relative; width:100%; padding:0 0 75%;overflow:hidden;'><div class='galleryInnerImageHolder'><a href='/assets/images/gallery/4748961_1_orig.jpg' rel='lightbox[gallery]'><img src='/assets/images/gallery/4748961_1.jpg' class='galleryImage' _width='400' _height='297' style='position:absolute;border:0;width:101.01%;top:0%;left:-0.51%' /></a></div></div></div></div></div><span style='display: block; clear: both; height: 0px; overflow: hidden;'></span>
-</div>
-
-      </div>
-    </div>
-  </div>
 
   <!-- =================================================
        FOOTER
