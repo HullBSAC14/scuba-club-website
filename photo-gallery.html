@@ -113,60 +113,57 @@
 
         <h2 class="wsite-content-title">Photo Gallery</h2>
 
-        <!-- =========================================================
-     GALLERY SECTION : EYEMOUTH
-     Purpose:
-     - Display photos from Eyemouth dive trips
-     - Uses legacy Weebly gallery markup for styling/lightbox
-     - Structure cleaned for readability and easy extension
-     ========================================================= -->
+ 
 
+<!-- =====================================================
+     GALLERY SECTION: EYEMOUTH
+     ===================================================== -->
 <section class="gallery-section">
+  <h2 class="gallery-title">Eyemouth</h2>
 
-  <!-- Section heading -->
-  <h2 class="wsite-content-title">Eyemouth</h2>
+  <div class="gallery-grid">
+    <!-- Gallery item -->
+    <a
+      href="/assets/images/gallery/crab_1_orig.jpg"
+      class="gallery-item"
+      data-lightbox="eyemouth"
+      data-title="Eyemouth diving trip"
+    >
+      <img
+        src="/assets/images/gallery/crab_1.jpg"
+        alt="Eyemouth diving trip"
+        loading="lazy"
+      >
+    </a>
 
-  <!-- Image grid -->
-  <div class="wsite-image-gallery wsite-image-gallery-grid">
+    <a
+      href="/assets/images/gallery/crab2_1_orig.jpg"
+      class="gallery-item"
+      data-lightbox="eyemouth"
+      data-title="Eyemouth dive site"
+    >
+      <img
+        src="/assets/images/gallery/crab2_1.jpg"
+        alt="Eyemouth dive site"
+        loading="lazy"
+      >
+    </a>
 
-    <!-- =====================================================
-         Gallery Item
-         To add more photos:
-         - Copy one <div class="wsite-image"> block
-         - Update href + img src
-         ===================================================== -->
+    <a
+      href="/assets/images/gallery/dennis_1_orig.jpg"
+      class="gallery-item"
+      data-lightbox="eyemouth"
+      data-title="BSAC Hull divers at Eyemouth"
+    >
+      <img
+        src="/assets/images/gallery/dennis_1.jpg"
+        alt="BSAC Hull divers at Eyemouth"
+        loading="lazy"
+      >
+    </a>
 
-    <div class="wsite-image">
-      <a href="assets/images/gallery/eyemouth_01.jpg">
-        <img
-          src="assets/images/gallery/eyemouth_01.jpg"
-          alt="Eyemouth diving trip"
-        >
-      </a>
-    </div>
-
-    <div class="wsite-image">
-      <a href="assets/images/gallery/eyemouth_02.jpg">
-        <img
-          src="assets/images/gallery/eyemouth_02.jpg"
-          alt="Eyemouth dive site"
-        >
-      </a>
-    </div>
-
-    <div class="wsite-image">
-      <a href="assets/images/gallery/eyemouth_03.jpg">
-        <img
-          src="assets/images/gallery/eyemouth_03.jpg"
-          alt="BSAC Hull divers at Eyemouth"
-        >
-      </a>
-    </div>
-
-    <!-- Add more Eyemouth images above this line -->
-
+    <!-- Add more <a class="gallery-item"> blocks as needed -->
   </div>
-
 </section>
 
 
